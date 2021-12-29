@@ -1,8 +1,10 @@
+require("dotenv").config();
+
 const Koa = require("koa");
 const Router = require("@koa/router");
 const cors = require("@koa/cors");
 const ethers = require("ethers");
-const PaymentProcessor = require("../frontend/src/contracts/PaymentProcessor.json");
+const PaymentProcessor = require("../web3-ecommerce-frontend/src/contracts/PaymentProcessor.json");
 const { Payment } = require("./db.js");
 
 const app = new Koa();
